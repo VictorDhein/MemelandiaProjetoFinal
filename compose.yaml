@@ -1,1 +1,22 @@
 services:
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: usuarios-service
+          uri: lb://usuarios-service
+          predicates:
+            - Path=/usuarios/**
+        - id: categorias-service
+          uri: lb://categorias-service
+          predicates:
+            - Path=/categorias/**
+        - id: memes-service
+          uri: lb://memes-service
+          predicates:
+            - Path=/memes/**
+        - id: meme-do-dia-service
+          uri: lb://meme-do-dia-service
+          predicates:
+            - Path=/meme-do-dia/**
+
