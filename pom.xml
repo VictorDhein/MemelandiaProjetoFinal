@@ -11,7 +11,8 @@
 	<groupId>com.victordhein</groupId>
 	<artifactId>memelandia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>memelandia</name>
+    <packaging>pom</packaging>
+    <name>memelandia</name>
 	<description>ProjetoFinalCurso</description>
 	<url/>
 	<licenses>
@@ -20,7 +21,14 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>Categoria</module>
+		<module>ApiGateway</module>
+		<module>Meme</module>
+		<module>Usuario</module>
+		<module>MemeDoDia</module>
+	</modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>
